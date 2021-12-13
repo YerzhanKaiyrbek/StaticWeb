@@ -1,0 +1,14 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+    <span style="font-family:TimesNewRoman">
+        <h2 style="font-size:300%">{{ flatpage.title }}</h2>
+            <hr>
+        <h3>Отзывы:</h3>
+        {{ flatpage.content }}
+    </span>
+{% endblock content %}
